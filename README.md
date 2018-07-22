@@ -1,3 +1,5 @@
+# Basic documentation for MyApp - Tour of Heroes project, pre-filled with CLI command information.
+
 # AngularTourOfHeroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
