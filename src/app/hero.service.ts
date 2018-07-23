@@ -14,6 +14,8 @@ export class HeroService {
   constructor(private messageService: MessageService) { }
 
   getHeroes(): Observable<Hero[]> {
+    //todo: send the message after fetching the heroes
+    this.messageService.add('From HeroService: fetched heroes');
     return of(HEROES);
   }
   // of(HEROES) returns an Observable<Hero[]> that emits a single value, the array of mock heroes.
