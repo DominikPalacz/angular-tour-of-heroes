@@ -18,7 +18,8 @@ const httpOptions = {
 })
 export class HeroService {
 
-  private heroesUrl = 'api/heroes';  // URL to web api
+  //private heroesUrl = 'api/heroes';  // URL to web api
+  private heroesUrl = 'https://daneukladanie.firebaseio.com/heroes/tablica.json';  // URL to web api
 
   constructor(
     private http: HttpClient,
