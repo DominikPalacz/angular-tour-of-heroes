@@ -20,6 +20,7 @@ export class HeroService {
 
   //private heroesUrl = 'api/heroes';  // URL to web api
   private heroesUrl = 'https://daneukladanie.firebaseio.com/heroes/tablica.json';  // URL to web api
+  private heroesUrl2 = 'https://daneukladanie.firebaseio.com/heroes.json';  // URL to web api
 
   constructor(
     private http: HttpClient,
@@ -52,8 +53,8 @@ export class HeroService {
   }
 
   /** POST: add a new hero to the server */
-  addHero (hero: string): Observable<string> {
-    return this.http.post<string>(this.heroesUrl, hero, httpOptions).pipe(
+  addHero (hero: any): Observable<string> {
+    return this.http.post<string>(this.heroesUrl2, hero, httpOptions).pipe(
       tap((hero: Hero) => this.log(`added hero w/ id=${hero.id}`)),
       catchError(this.handleError<Hero>('addHero'))
     );

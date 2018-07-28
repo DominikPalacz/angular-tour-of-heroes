@@ -26,10 +26,10 @@ export class HeroesComponent implements OnInit {
       .subscribe(heroes => this.heroes = heroes);
   }
 
-  add(name: string): void {
+  add(name: any): void {
     name = name.trim();
     if (!name) { return; }
-    this.heroService.addHero({ name } as Hero)
+    this.heroService.addHero({ name } as any)
       .subscribe(hero => {
         this.heroes.push(hero);
       });
