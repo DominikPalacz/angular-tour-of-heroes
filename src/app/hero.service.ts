@@ -20,7 +20,7 @@ export class HeroService {
 
   //private heroesUrl = 'api/heroes';  // URL to web api
   private heroesUrl = 'https://daneukladanie.firebaseio.com/heroes/tablica.json';  // URL to web api
-  private heroesUrl2 = 'https://daneukladanie.firebaseio.com/heroes.json';  // URL to web api
+  private heroesUrl2 = 'https://daneukladanie.firebaseio.com/heroes/tablica/0.json';  // URL to web api
 
   constructor(
     private http: HttpClient,
